@@ -8,6 +8,7 @@ import { markDone } from "../slices/todoSlice";
 
 const Listtodos = () => {
   const todos = useSelector((state) => state.todos.todos);
+  console.log(todos)
   const dispatch = useDispatch();
 
   return (
@@ -41,7 +42,7 @@ const Listtodos = () => {
             </div>
           ))
         ) : (
-          <div className="border rounded-xl py-2 px-4 flex items-center text-xl justify-between bg-gray-800">
+          <div className="border border-gray-400 rounded-xl py-2 px-4 flex items-center text-xl justify-between bg-gray-800 text-gray-400">
             No tasts available
           </div>
         )}

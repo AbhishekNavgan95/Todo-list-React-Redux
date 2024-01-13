@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 
 const todos = localStorage.getItem("todos")
   ? JSON.parse(localStorage.getItem("todos"))
-  : null;
+  : [];
 
 const initialState = {
   todos: todos,
